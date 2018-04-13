@@ -1,0 +1,424 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<style>
+
+    .col-4, .col-3, .col-5{
+        /*border: 2px solid #00ff90;*/
+        height: 100%;
+    }
+    .row-parent {
+        /*border: 2px solid #ff0000;*/
+        height: 100%;
+    }
+    /*start row-login*/
+    .row-login {
+        height: 30%;
+        /*border: 2px solid #4800ff;*/
+        padding-left: 20px;
+        background-color: #ffffff;
+    }
+    input{
+        border:1px solid #808080;
+        border-radius:4px;
+        padding:5px;
+        margin-bottom:8px;
+    }
+    .row-login h5 {
+        margin-bottom: 0px;
+        line-height: 60px;
+        font-size: 30px;
+        color: #393836;
+        font-weight: 300;
+
+    }
+    .row-login p {
+        color: #bababa;
+    }
+        .row-login .form-group{
+
+    }
+    .row-login .btn {
+        background-color: #6f43bd;
+        /*width: 21%;*/
+        width: 36%;
+        margin-left: 6px;
+        padding: 6px;
+    }
+    /*start row-phone*/
+    .row-phone {
+        height: 70%;
+        /*border: 2px solid #4800ff;*/
+        padding-top:20px;
+    }
+    #main {
+        width: 20%;
+        height:98%;
+        margin-top:7px;
+        margin-left: auto;
+        margin-right: 4px;
+        border: 1px solid #c3c3c3;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-align-content: center;
+        align-content: center;
+    }
+
+        #main div {
+            width: 100%;
+            height: 14.3%;
+            border-bottom: 1px solid #c3c3c3;
+            text-align:center;
+            padding-top:10px;
+        }
+
+    /*start row-home*/
+    .row-home {
+        height: 40%;
+        /*border: 2px solid #4800ff;*/
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom:20px;
+    }
+    .row-home #home-top{
+        height:52%;
+        width:100%;
+        background-image:url('../Images/b.jpg');
+        position:center;
+        text-align:center;
+    }
+        .row-home h2 {
+             color:#393836;
+             font-weight:400;
+        }
+        .row-home h5 {
+            color: #a9a9a9;
+            font-weight: 300;
+        }
+    #home-bottom {
+        text-align: center;
+        margin: auto;
+        padding-top:50px;
+    }
+    .row-home .row-boottom {
+        height: 50%;
+        width: 100%;
+        background-color: blueviolet;
+        border: 2px solid #4800ff;
+    }
+    .row-home img{
+       position:relative;
+       bottom: -112px;
+       border:3px solid #ffffff;
+
+    }
+    /*start row-calendar*/
+    .row-calendar {
+        height: 40%;
+        padding-left:20px;
+        padding-right:20px;
+        padding-bottom:20px;
+       
+        /*border: 2px solid #4800ff;*/
+    }
+    #main1 {
+        width: 12%;
+        height: 90%;
+        margin-top: 0px;
+        margin-left: auto;
+        /*margin-right: 20px;*/
+        /*border: 1px solid #c3c3c3;*/
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-align-content: center;
+        align-content: center;
+    }
+
+        #main1 div {
+            width: 100%;
+            height: 15%;
+            border-bottom: 1px solid #c3c3c3;
+            text-align: center;
+            padding-top: 10px;
+            border-radius: 8px;
+            margin-bottom: 11%;
+            background-color: #e5e0ed;
+            color: #6f43bd;
+            border: 1px solid #6f43bd;
+        }
+          /*calendar*/
+
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+.calendar{
+    width:80%;
+    background-color:#ffffff;
+    border:1px solid #e6e5e5;
+    /*text-align:center;*/
+}
+.month {
+    padding: 10px 30px 5px 30px;
+    width: 100%;
+    background: #393836;
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    width:100%;
+    margin: 0;
+    padding: 5px 0;
+    /*background-color: #ddd;*/
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 12%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    width:100%;
+    padding: 0;
+    /*background: #eee;*/
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 12%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px 8px;
+    background: #6f43bd;
+    border-radius:50%;
+    color: white !important;
+}
+    /*start row-login*/
+    .row-drop {
+        height: 20%;
+        /*border: 2px solid #4800ff;*/
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .row-drop a:hover{
+        background-color:#6f43bd;
+    }
+    /*start row-login*/
+    .row-map {
+        height: 40%;
+        /*border: 2px solid #4800ff;*/
+    }
+    /*start row-login*/
+    .row-butons {
+        height: 30%;
+        /*border: 2px solid #4800ff;*/
+    }
+    /*start row-login*/
+    .row-video {
+        height: 30%;
+        /*border: 2px solid #4800ff;*/
+    }
+  
+
+</style>
+<div class="row row-parent">
+    <!-- col1 -->
+    <div class="col-4">
+        <!-- row login -->
+        <div class="row row-login">
+           
+               
+          
+            
+            <div class="form-group">
+                <h5>Login info</h5>
+                <p>Type your email and password</p>
+
+                <input type="text"  placeholder="Email" style="width:60%"/>
+                <input type="password" placeholder="Password" style="width:36%" />
+               
+                <div class="offset-sm-3">
+                    <input type="radio" /> Keep me logged in
+                    <input type="submit" class="btn btn-info btn-sm" value="Login" />
+                </div>
+            </div>
+           
+               
+            </div>
+            <!-- row phone -->
+        <div class="row row-phone">
+            <img src="../Images/phone.png" style="width:72%">
+
+            <div id="main">
+                <div style="background-color:#6f43bd;color:#ffffff;"><h6 style="font-weight:300;font-size:13px;">MON</h6><h6 style="font-size:32px;font-weight:300;">14</h6></div>
+                <div style="background-color:#ffffff;color:#808080;"><h6 style="font-weight:300;font-size:13px;">MON</h6><h6 style="font-size:32px;font-weight:300;">14</h6></div>
+                <div style="background-color:#ffffff;color:#808080;"><h6 style="font-weight:300;font-size:13px;">MON</h6><h6 style="font-size:32px;font-weight:300;">14</h6></div>
+                <div style="background-color:#ffffff;color:#808080;"><h6 style="font-weight:300;font-size:13px;">MON</h6><h6 style="font-size:32px;font-weight:300;">14</h6></div>
+                <div style="background-color:#ffffff;color:#808080;"><h6 style="font-weight:300;font-size:13px;">MON</h6><h6 style="font-size:32px;font-weight:300;">14</h6></div>
+                <div style="background-color:#ffffff;color:#808080;"><h6 style="font-weight:300;font-size:13px;">MON</h6><h6 style="font-size:32px;font-weight:300;">14</h6></div>
+                <div style="background-color:#ffffff;color:#808080;"><h6 style="font-weight:300;font-size:13px;">MON</h6><h6 style="font-size:32px;font-weight:300;">14</h6></div>
+
+            </div>
+        </div>
+        </div>
+    <!-- col2 -->
+    <div class="col-4">
+        <!-- row home -->
+      
+        <div class="row row-home">
+            <div style="border: 1px solid #e6e5e5;width:100%; background-color:#ffffff;">
+                <div id="home-top">
+                    <img src="../Images/m.jpg" class="rounded-circle" alt="Cinque Terre" width="100" height="100">
+
+                </div>
+
+                <div id="home-bottom" >
+                    <h2>Jardson Araujo</h2>
+                    <h5>Product Designer</h5>
+                </div>
+            </div>
+        </div>
+        <!-- row calender -->
+        <div class="row row-calendar">
+            <!-- Calendar -->
+            <div class="calendar">
+                <div class="month">
+                    <ul>
+                        <li class="prev" style="padding-top:0;">&#10094;</li>
+                        <li class="next" style="padding-top:0;">&#10095;</li>
+                        <li>
+                            <span style="font-size:18px">MAY 2014</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="weekdays">
+                    <li>Mo</li>
+                    <li>Tu</li>
+                    <li>We</li>
+                    <li>Th</li>
+                    <li>Fr</li>
+                    <li>Sa</li>
+                    <li>Su</li>
+                </ul>
+
+                <ul class="days">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li><span class="active">8</span></li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>31</li>
+                </ul>
+
+                <input type="submit" value="Add Event" class="btn btn-info btn-sm"  style="background-color:#6f43bd;color:#ffffff; width:80%;margin-left:10%;margin-right:10%;margin-top:30px;padding:10px;" />
+            </div>
+            <!-- icons vertical -->
+            <div id="main1">
+                <div style=""><i class="fas fa-globe"></i></div>
+                <div style=""><h5>Bè</h5></div>
+                <div style=""><i class="fab fa-twitter"></i></div>
+                <div style=""><i class="fab fa-facebook-f"></i></div>
+                <div style=""><i class="fab fa-linkedin-in"></i></div>
+                <div style=""><i class="fab fa-google-plus-g"></i></div>
+
+            </div>
+        </div>
+        <!-- row drop -->
+        <div class="row row-drop">
+            <div class="dropdown" style="width:94%;">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="width:85%;border-radius:0; background-color:#f6f6f6;border:1px solid #dbdbdb;padding:10px;color:#898988;">
+                    Drop Down Menu
+                </button>
+                <div class="dropdown-menu" style="width:85%;">
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- col3 -->
+    <div class="col-4">
+        <!-- row home -->
+        <div class="row row-map">
+
+        </div>
+        <!-- row calender -->
+        <div class="row row-butons">
+
+        </div>
+        <!-- row drop -->
+        <div class="row row-video" style="padding-bottom: 18px;">
+            <video style="width:100%;" controls>
+                <source src="../Videos/v.MP4" type="video/mp4">
+                <source src="../Videos/ogg.MP4" type="video/ogg">
+                Your browser does not support HTML5 video.
+            </video>
+            @*<iframe style="width:100%;" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>*@
+
+
+        </div>
+    </div>
+
+</div>

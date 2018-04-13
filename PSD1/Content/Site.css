@@ -1,0 +1,56 @@
+﻿body {
+    /*padding-top: 50px;
+    padding-bottom: 20px;*/
+}
+@media (min-width: 1480px) {
+    .container {
+        max-width: 1580px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 900px;
+    }
+}
+@media (min-width: 992px) 
+{
+    .container {
+        max-width: 1350px;
+    }
+}
+/*@media (min-width: 576px) {
+    .container {
+        max-width: 740px;
+    }
+}*/
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    padding-left:60px;
+    padding-right:60px;
+    /*padding-left: 15px;
+    padding-right: 15px;*/
+    /*border: 2px solid #808080;*/
+    height: 950px;
+    background-color: #f3f3f3;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
