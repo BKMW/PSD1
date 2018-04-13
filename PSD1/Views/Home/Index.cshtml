@@ -3,10 +3,11 @@
 }
 <style>
 
-    .col-4, .col-3, .col-5{
+    .col-4, .col-3, .col-5 {
         /*border: 2px solid #00ff90;*/
         height: 100%;
     }
+
     .row-parent {
         /*border: 2px solid #ff0000;*/
         height: 100%;
@@ -17,27 +18,31 @@
         /*border: 2px solid #4800ff;*/
         padding-left: 20px;
         background-color: #ffffff;
+        border: 1px solid #dbdbdb;
     }
-    input{
-        border:1px solid #808080;
-        border-radius:4px;
-        padding:5px;
-        margin-bottom:8px;
+
+    .row-login input {
+        border: 1px solid #808080;
+        border-radius: 4px;
+        padding: 5px;
+        margin-bottom: 8px;
     }
+
     .row-login h5 {
         margin-bottom: 0px;
         line-height: 60px;
         font-size: 30px;
         color: #393836;
         font-weight: 300;
-
     }
+
     .row-login p {
         color: #bababa;
     }
-        .row-login .form-group{
 
+    .row-login .form-group {
     }
+
     .row-login .btn {
         background-color: #6f43bd;
         /*width: 21%;*/
@@ -49,12 +54,13 @@
     .row-phone {
         height: 70%;
         /*border: 2px solid #4800ff;*/
-        padding-top:20px;
+        padding-top: 20px;
     }
+
     #main {
         width: 20%;
-        height:98%;
-        margin-top:7px;
+        height: 98%;
+        margin-top: 7px;
         margin-left: auto;
         margin-right: 4px;
         border: 1px solid #c3c3c3;
@@ -70,8 +76,8 @@
             width: 100%;
             height: 14.3%;
             border-bottom: 1px solid #c3c3c3;
-            text-align:center;
-            padding-top:10px;
+            text-align: center;
+            padding-top: 10px;
         }
 
     /*start row-home*/
@@ -80,49 +86,54 @@
         /*border: 2px solid #4800ff;*/
         padding-left: 20px;
         padding-right: 20px;
-        padding-bottom:20px;
+        padding-bottom: 20px;
     }
-    .row-home #home-top{
-        height:52%;
-        width:100%;
-        background-image:url('../Images/b.jpg');
-        position:center;
-        text-align:center;
-    }
-        .row-home h2 {
-             color:#393836;
-             font-weight:400;
+
+        .row-home #home-top {
+            height: 52%;
+            width: 100%;
+            background-image: url('../Images/b.jpg');
+            position: center;
+            text-align: center;
         }
+
+        .row-home h2 {
+            color: #393836;
+            font-weight: 400;
+        }
+
         .row-home h5 {
             color: #a9a9a9;
             font-weight: 300;
         }
+
     #home-bottom {
         text-align: center;
         margin: auto;
-        padding-top:50px;
+        padding-top: 50px;
     }
+
     .row-home .row-boottom {
         height: 50%;
         width: 100%;
         background-color: blueviolet;
         border: 2px solid #4800ff;
     }
-    .row-home img{
-       position:relative;
-       bottom: -112px;
-       border:3px solid #ffffff;
 
+    .row-home img {
+        position: relative;
+        bottom: -112px;
+        border: 3px solid #ffffff;
     }
     /*start row-calendar*/
     .row-calendar {
         height: 40%;
-        padding-left:20px;
-        padding-right:20px;
-        padding-bottom:20px;
-       
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
         /*border: 2px solid #4800ff;*/
     }
+
     #main1 {
         width: 12%;
         height: 90%;
@@ -150,83 +161,93 @@
             color: #6f43bd;
             border: 1px solid #6f43bd;
         }
-          /*calendar*/
+    /*calendar*/
 
-* {box-sizing: border-box;}
-ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;}
-.calendar{
-    width:80%;
-    background-color:#ffffff;
-    border:1px solid #e6e5e5;
-    /*text-align:center;*/
-}
-.month {
-    padding: 10px 30px 5px 30px;
-    width: 100%;
-    background: #393836;
-    text-align: center;
-}
+    * {
+        box-sizing: border-box;
+    }
 
-.month ul {
-    margin: 0;
-    padding: 0;
-}
+    ul {
+        list-style-type: none;
+    }
 
-.month ul li {
-    color: white;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
+    body {
+        font-family: Verdana, sans-serif;
+    }
 
-.month .prev {
-    float: left;
-    padding-top: 10px;
-}
+    .calendar {
+        width: 80%;
+        background-color: #ffffff;
+        border: 1px solid #e6e5e5;
+        /*text-align:center;*/
+    }
 
-.month .next {
-    float: right;
-    padding-top: 10px;
-}
+    .month {
+        padding: 5px 30px 7px 30px;
+        width: 100%;
+        background: #393836;
+        text-align: center;
+    }
 
-.weekdays {
-    width:100%;
-    margin: 0;
-    padding: 5px 0;
-    /*background-color: #ddd;*/
-}
+        .month ul {
+            margin: 0;
+            padding: 0;
+        }
 
-.weekdays li {
-    display: inline-block;
-    width: 12%;
-    color: #666;
-    text-align: center;
-}
+            .month ul li {
+                color: white;
+                font-size: 15px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
 
-.days {
-    width:100%;
-    padding: 0;
-    /*background: #eee;*/
-    margin: 0;
-}
+        .month .prev {
+            float: left;
+            padding-top: 2px;
+        }
 
-.days li {
-    list-style-type: none;
-    display: inline-block;
-    width: 12%;
-    text-align: center;
-    margin-bottom: 5px;
-    font-size:12px;
-    color: #777;
-}
+        .month .next {
+            float: right;
+            padding-top: 2px;
+        }
 
-.days li .active {
-    padding: 5px 8px;
-    background: #6f43bd;
-    border-radius:50%;
-    color: white !important;
-}
+    .weekdays {
+        width: 100%;
+        margin: 0;
+        padding: 5px 0;
+        /*background-color: #ddd;*/
+    }
+
+        .weekdays li {
+            display: inline-block;
+            width: 12%;
+            color: #666;
+            text-align: center;
+        }
+
+    .days {
+        width: 100%;
+        padding: 0;
+        /*background: #eee;*/
+        margin: 0;
+    }
+
+        .days li {
+            list-style-type: none;
+            display: inline-block;
+            width: 12%;
+            text-align: center;
+            margin-bottom: 5px;
+            font-size: 12px;
+            color: #777;
+        }
+
+            .days li .active {
+                padding: 5px 8px;
+                background: #6f43bd;
+                border-radius: 50%;
+                color: white !important;
+            }
     /*start row-login*/
     .row-drop {
         height: 20%;
@@ -234,12 +255,14 @@ body {font-family: Verdana, sans-serif;}
         padding-left: 20px;
         padding-right: 20px;
     }
-    .row-drop a:hover{
-        background-color:#6f43bd;
-    }
+
+        .row-drop a:hover {
+            background-color: #6f43bd;
+        }
     /*start row-login*/
     .row-map {
         height: 40%;
+        padding-bottom:20px;
         /*border: 2px solid #4800ff;*/
     }
     /*start row-login*/
@@ -247,39 +270,114 @@ body {font-family: Verdana, sans-serif;}
         height: 30%;
         /*border: 2px solid #4800ff;*/
     }
+    .row-butons input[type="text"] {
+        border: 1px solid #808080;
+        border-radius: 4px;
+        padding: 5px;
+        margin-bottom: 8px;
+        width:108%;
+    }
+    .row-butons .alert{
+        width:108%;
+        font-size:12px;
+    }
+        .row-butons .alert i {
+           margin-right:auto;
+           margin-left:0;
+           
+        }
+        /* buttons switch */
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 20%;
+        height: 20px;
+    }
+
+        .switch input {
+            display: none;
+        }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    .s1 {
+        background-color: #ff0000;
+    }
+    
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 2px;
+            bottom: 2px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+    input:checked + .slider {
+        background-color: #6f43bd;
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(15px);
+        -ms-transform: translateX(15px);
+        transform: translateX(15px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px
+    }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
     /*start row-login*/
     .row-video {
         height: 30%;
         /*border: 2px solid #4800ff;*/
     }
-  
-
 </style>
 <div class="row row-parent">
     <!-- col1 -->
     <div class="col-4">
         <!-- row login -->
         <div class="row row-login">
-           
-               
-          
-            
+
+
+
+
             <div class="form-group">
                 <h5>Login info</h5>
                 <p>Type your email and password</p>
 
-                <input type="text"  placeholder="Email" style="width:60%"/>
+                <input type="text" placeholder="Email" style="width:60%" />
                 <input type="password" placeholder="Password" style="width:36%" />
-               
+
                 <div class="offset-sm-3">
                     <input type="radio" /> Keep me logged in
                     <input type="submit" class="btn btn-info btn-sm" value="Login" />
                 </div>
             </div>
-           
-               
-            </div>
-            <!-- row phone -->
+
+
+        </div>
+        <!-- row phone -->
         <div class="row row-phone">
             <img src="../Images/phone.png" style="width:72%">
 
@@ -294,11 +392,11 @@ body {font-family: Verdana, sans-serif;}
 
             </div>
         </div>
-        </div>
+    </div>
     <!-- col2 -->
     <div class="col-4">
         <!-- row home -->
-      
+
         <div class="row row-home">
             <div style="border: 1px solid #e6e5e5;width:100%; background-color:#ffffff;">
                 <div id="home-top">
@@ -306,7 +404,7 @@ body {font-family: Verdana, sans-serif;}
 
                 </div>
 
-                <div id="home-bottom" >
+                <div id="home-bottom">
                     <h2>Jardson Araujo</h2>
                     <h5>Product Designer</h5>
                 </div>
@@ -318,8 +416,8 @@ body {font-family: Verdana, sans-serif;}
             <div class="calendar">
                 <div class="month">
                     <ul>
-                        <li class="prev" style="padding-top:0;">&#10094;</li>
-                        <li class="next" style="padding-top:0;">&#10095;</li>
+                        <li class="prev">&#10094;</li>
+                        <li class="next">&#10095;</li>
                         <li>
                             <span style="font-size:18px">MAY 2014</span>
                         </li>
@@ -370,7 +468,7 @@ body {font-family: Verdana, sans-serif;}
                     <li>31</li>
                 </ul>
 
-                <input type="submit" value="Add Event" class="btn btn-info btn-sm"  style="background-color:#6f43bd;color:#ffffff; width:80%;margin-left:10%;margin-right:10%;margin-top:30px;padding:10px;" />
+                <input type="submit" value="Add Event" class="btn btn-info btn-sm" style="background-color:#6f43bd;color:#ffffff; width:80%;margin-left:10%;margin-right:10%;margin-top:30px;padding:10px;" />
             </div>
             <!-- icons vertical -->
             <div id="main1">
@@ -403,10 +501,46 @@ body {font-family: Verdana, sans-serif;}
         <!-- row home -->
         <div class="row row-map">
 
-        </div>
-        <!-- row calender -->
-        <div class="row row-butons">
 
+            <div id="googleMap" style="width:100%;border:1px solid #dbdbdb"></div>
+
+        </div>
+        <!-- row buttons -->
+        <div class="row row-butons">
+            <!-- left div -->
+            <div class="col col-left">
+                <div class="form-group">
+                    <input type="button" value="style 1" class="btn btn-info btn-sm" style="width:48%; background-color:#6f43bd;color:#ffffff;border:1px solid #6f43bd;" />
+                    <input type="button" value="style 2" class="btn btn-outline-info btn-sm" style="width:48%; color:#6f43bd;border:2px solid #6f43bd;" />
+                </div>
+                <div class="form-group">
+                    <input type="button" value="Disabled" class="btn btn-outline-dark btn-sm" style="width:48%; border:2px solid #bababa;color:#bababa" />
+                    <input type="button" value="Error" class="btn btn-outline-danger btn-sm" style="width:48%;background-color:#f4dfde;" />
+                </div>
+
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round" id="s1"></span>
+                </label>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+
+            </div>
+
+            <!-- right div -->
+                <div class="col col-right" style="width:48%;">
+                    <input type="text" />
+                    <input type="text" />
+                    <div class="alert alert-success">Success  <i class="fas fa-check"></i></div>
+                    <div class="alert alert-danger">Error! Please try again <i class="fas fa-times"></i></div>
+                </div>
+            
         </div>
         <!-- row drop -->
         <div class="row row-video" style="padding-bottom: 18px;">
@@ -422,3 +556,15 @@ body {font-family: Verdana, sans-serif;}
     </div>
 
 </div>
+
+<script>
+    function myMap() {
+        var mapProp = {
+            center: new google.maps.LatLng(51.508742, -0.120850),
+            zoom: 14,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+    }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZH3d8AiCZ4ImXOCtME7d9_ze3EZnxeR4&callback=myMap"></script>
