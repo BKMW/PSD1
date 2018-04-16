@@ -1,5 +1,6 @@
 ﻿@{
     ViewBag.Title = "Home Page";
+<link rel="stylesheet" type="text/css" href="~/source/jsCalendar.css" />
 }
 <style>
 
@@ -21,35 +22,35 @@
         border: 1px solid #dbdbdb;
     }
 
-    .row-login input {
-        border: 1px solid #808080;
-        border-radius: 4px;
-        padding: 5px;
-        margin-bottom: 8px;
-    }
+        .row-login input {
+            border: 1px solid #808080;
+            border-radius: 4px;
+            padding: 5px;
+            margin-bottom: 8px;
+        }
 
-    .row-login h5 {
-        margin-bottom: 0px;
-        line-height: 60px;
-        font-size: 30px;
-        color: #393836;
-        font-weight: 300;
-    }
+        .row-login h5 {
+            margin-bottom: 0px;
+            line-height: 60px;
+            font-size: 30px;
+            color: #393836;
+            font-weight: 300;
+        }
 
-    .row-login p {
-        color: #bababa;
-    }
+        .row-login p {
+            color: #bababa;
+        }
 
-    .row-login .form-group {
-    }
+        .row-login .form-group {
+        }
 
-    .row-login .btn {
-        background-color: #6f43bd;
-        /*width: 21%;*/
-        width: 36%;
-        margin-left: 6px;
-        padding: 6px;
-    }
+        .row-login .btn {
+            background-color: #6f43bd;
+            /*width: 21%;*/
+            width: 36%;
+            margin-left: 6px;
+            padding: 6px;
+        }
     /*start row-phone*/
     .row-phone {
         height: 70%;
@@ -248,7 +249,7 @@
                 border-radius: 50%;
                 color: white !important;
             }
-    /*start row-login*/
+    /*start row-drop*/
     .row-drop {
         height: 20%;
         /*border: 2px solid #4800ff;*/
@@ -262,7 +263,7 @@
     /*start row-login*/
     .row-map {
         height: 40%;
-        padding-bottom:20px;
+        padding-bottom: 20px;
         /*border: 2px solid #4800ff;*/
     }
     /*start row-login*/
@@ -270,23 +271,25 @@
         height: 30%;
         /*border: 2px solid #4800ff;*/
     }
-    .row-butons input[type="text"] {
-        border: 1px solid #808080;
-        border-radius: 4px;
-        padding: 5px;
-        margin-bottom: 8px;
-        width:108%;
-    }
-    .row-butons .alert{
-        width:108%;
-        font-size:12px;
-    }
-        .row-butons .alert i {
-           margin-right:auto;
-           margin-left:0;
-           
+
+        .row-butons input[type="text"] {
+            border: 1px solid #808080;
+            border-radius: 4px;
+            padding: 5px;
+            margin-bottom: 8px;
+            width: 108%;
         }
-        /* buttons switch */
+
+        .row-butons .alert {
+            width: 108%;
+            font-size: 12px;
+        }
+
+            .row-butons .alert i {
+                margin-right: auto;
+                margin-left: 0;
+            }
+    /* buttons switch */
     .switch {
         position: relative;
         display: inline-block;
@@ -309,21 +312,22 @@
         -webkit-transition: .4s;
         transition: .4s;
     }
+
     .s1 {
         background-color: #ff0000;
     }
-    
-        .slider:before {
-            position: absolute;
-            content: "";
-            height: 16px;
-            width: 16px;
-            left: 2px;
-            bottom: 2px;
-            background-color: white;
-            -webkit-transition: .4s;
-            transition: .4s;
-        }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 16px;
+        width: 16px;
+        left: 2px;
+        bottom: 2px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
 
     input:checked + .slider {
         background-color: #6f43bd;
@@ -352,6 +356,19 @@
         height: 30%;
         /*border: 2px solid #4800ff;*/
     }
+    /* clander  plugin custom */
+    .jsCalendar.material-theme thead{
+        background-color:#393836;
+        padding:0;
+    }
+    .jsCalendar tbody td.jsCalendar-current {
+        background-color: #6f43bd;
+    }
+    .jsCalendar thead .jsCalendar-title{
+        background-color:#393836;
+        color:#ffffff;
+    }
+    
 </style>
 <div class="row row-parent">
     <!-- col1 -->
@@ -383,12 +400,12 @@
 
             <div id="main">
                 <div style="background-color:#6f43bd;color:#ffffff;"><h6 style="font-weight:300;font-size:13px;">MON</h6><h6 style="font-size:32px;font-weight:300;">14</h6></div>
-                <div style="background-color:#ffffff;color:#808080;"><h6 style="font-weight:300;font-size:13px;">MON</h6><h6 style="font-size:32px;font-weight:300;">14</h6></div>
-                <div style="background-color:#ffffff;color:#808080;"><h6 style="font-weight:300;font-size:13px;">MON</h6><h6 style="font-size:32px;font-weight:300;">14</h6></div>
-                <div style="background-color:#ffffff;color:#808080;"><h6 style="font-weight:300;font-size:13px;">MON</h6><h6 style="font-size:32px;font-weight:300;">14</h6></div>
-                <div style="background-color:#ffffff;color:#808080;"><h6 style="font-weight:300;font-size:13px;">MON</h6><h6 style="font-size:32px;font-weight:300;">14</h6></div>
-                <div style="background-color:#ffffff;color:#808080;"><h6 style="font-weight:300;font-size:13px;">MON</h6><h6 style="font-size:32px;font-weight:300;">14</h6></div>
-                <div style="background-color:#ffffff;color:#808080;"><h6 style="font-weight:300;font-size:13px;">MON</h6><h6 style="font-size:32px;font-weight:300;">14</h6></div>
+                <div style="background-color:#ffffff;color:#808080;"><h6 style="font-weight:300;font-size:13px;">TUE</h6><h6 style="font-size:32px;font-weight:300;">15</h6></div>
+                <div style="background-color:#ffffff;color:#808080;"><h6 style="font-weight:300;font-size:13px;">WED</h6><h6 style="font-size:32px;font-weight:300;">16</h6></div>
+                <div style="background-color:#ffffff;color:#808080;"><h6 style="font-weight:300;font-size:13px;">THU</h6><h6 style="font-size:32px;font-weight:300;">17</h6></div>
+                <div style="background-color:#ffffff;color:#808080;"><h6 style="font-weight:300;font-size:13px;">FRI</h6><h6 style="font-size:32px;font-weight:300;">18</h6></div>
+                <div style="background-color:#ffffff;color:#808080;"><h6 style="font-weight:300;font-size:13px;">SAT</h6><h6 style="font-size:32px;font-weight:300;">19</h6></div>
+                <div style="background-color:#ffffff;color:#808080;"><h6 style="font-weight:300;font-size:13px;">SUN</h6><h6 style="font-size:32px;font-weight:300;">20</h6></div>
 
             </div>
         </div>
@@ -412,64 +429,81 @@
         </div>
         <!-- row calender -->
         <div class="row row-calendar">
+
             <!-- Calendar -->
-            <div class="calendar">
-                <div class="month">
-                    <ul>
-                        <li class="prev">&#10094;</li>
-                        <li class="next">&#10095;</li>
-                        <li>
-                            <span style="font-size:18px">MAY 2014</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <ul class="weekdays">
-                    <li>Mo</li>
-                    <li>Tu</li>
-                    <li>We</li>
-                    <li>Th</li>
-                    <li>Fr</li>
-                    <li>Sa</li>
-                    <li>Su</li>
-                </ul>
-
-                <ul class="days">
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
-                    <li>7</li>
-                    <li><span class="active">8</span></li>
-                    <li>9</li>
-                    <li>10</li>
-                    <li>11</li>
-                    <li>12</li>
-                    <li>13</li>
-                    <li>14</li>
-                    <li>15</li>
-                    <li>16</li>
-                    <li>17</li>
-                    <li>18</li>
-                    <li>19</li>
-                    <li>20</li>
-                    <li>21</li>
-                    <li>22</li>
-                    <li>23</li>
-                    <li>24</li>
-                    <li>25</li>
-                    <li>26</li>
-                    <li>27</li>
-                    <li>28</li>
-                    <li>29</li>
-                    <li>30</li>
-                    <li>31</li>
-                </ul>
-
-                <input type="submit" value="Add Event" class="btn btn-info btn-sm" style="background-color:#6f43bd;color:#ffffff; width:80%;margin-left:10%;margin-right:10%;margin-top:30px;padding:10px;" />
+            @*<div id="my-calendar"></div>*@
+            <div>
+                <div class="auto-jsCalendar material-theme" style="margin-bottom:0"></div>
+                @*<input type="submit" value="Add Event" class="btn btn-info btn-sm" style="background-color:#6f43bd;color:#ffffff; width:80%;margin-left:10%;margin-right:10%;margin-top:0px;padding:10px;" />*@
             </div>
+            
+
+            @*<div class="auto-jsCalendar"></div>*@
+            @*<div class="calendar-wrapper calendar">
+
+            <i class="fa fa-angle-left prev" id="btnPrev"></i>
+            <i class="fa fa-angle-right next" id="btnNext"></i>
+
+
+            <div id="divCal" class="days"></div>
+        </div>*@
+            @*<div class="calendar">
+            <div class="month">
+                <ul>
+                    <li class="prev">&#10094;</li>
+                    <li class="next">&#10095;</li>
+                    <li>
+                        <span style="font-size:18px">MAY 2014</span>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="weekdays">
+                <li>Mo</li>
+                <li>Tu</li>
+                <li>We</li>
+                <li>Th</li>
+                <li>Fr</li>
+                <li>Sa</li>
+                <li>Su</li>
+            </ul>
+
+            <ul class="days">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li><span class="active">8</span></li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li>28</li>
+                <li>29</li>
+                <li>30</li>
+                <li>31</li>
+            </ul>
+
+            <input type="submit" value="Add Event" class="btn btn-info btn-sm" style="background-color:#6f43bd;color:#ffffff; width:80%;margin-left:10%;margin-right:10%;margin-top:30px;padding:10px;" />
+        </div>*@
             <!-- icons vertical -->
             <div id="main1">
                 <div style=""><i class="fas fa-globe"></i></div>
@@ -483,7 +517,7 @@
         </div>
         <!-- row drop -->
         <div class="row row-drop">
-            <div class="dropdown" style="width:94%;">
+            <div class="dropdown" style="width:90%; margin-left:3px;">
                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="width:85%;border-radius:0; background-color:#f6f6f6;border:1px solid #dbdbdb;padding:10px;color:#898988;">
                     Drop Down Menu
                 </button>
@@ -498,7 +532,7 @@
     </div>
     <!-- col3 -->
     <div class="col-4">
-        <!-- row home -->
+        <!-- row map -->
         <div class="row row-map">
 
 
@@ -518,7 +552,7 @@
                     <input type="button" value="Error" class="btn btn-outline-danger btn-sm" style="width:48%;background-color:#f4dfde;" />
                 </div>
 
-                <label class="switch">
+                <label class="switch" style="margin-left:25%;">
                     <input type="checkbox">
                     <span class="slider round"></span>
                 </label>
@@ -530,19 +564,34 @@
                     <input type="checkbox" checked>
                     <span class="slider round"></span>
                 </label>
+                <div id="time">
+
+                    <div style="height:30px; background-color:#393836; padding:7px;">
+                        <i class="fas fa-plus" style="float: right;color:#ffffff;"></i>
+                    </div>
+                    <div style="background-color:#ffffff;height:60px;text-align:center;font-size:25px;">
+                        <div id="clock" style="height:40px; text-align:center;font-size:25px;color:#6f43bd;">
+
+                        </div>
+                        <div style="height:40px; text-align:center;font-size:10px;color:#393836;">
+                            <span>HOUR</span> <span style="margin-left:5px;">MIN</span>    <span style="margin-left:5px;">SEC</span>
+                        </div>
+                    </div>
+
+                </div>
 
             </div>
 
             <!-- right div -->
-                <div class="col col-right" style="width:48%;">
-                    <input type="text" />
-                    <input type="text" />
-                    <div class="alert alert-success">Success  <i class="fas fa-check"></i></div>
-                    <div class="alert alert-danger">Error! Please try again <i class="fas fa-times"></i></div>
-                </div>
-            
+            <div class="col col-right" style="width:48%;">
+                <input type="text" />
+                <input type="text" />
+                <div class="alert alert-success" style="padding:10px;">Success  <i class="fas fa-check fa-1x" style="float:right"></i></div>
+                <div class="alert alert-danger" style="padding:10px;">Error! Please try again <i class="fas fa-times fa-1x" style="float:right"></i></div>
+            </div>
+
         </div>
-        <!-- row drop -->
+        <!-- row video -->
         <div class="row row-video" style="padding-bottom: 18px;">
             <video style="width:100%;" controls>
                 <source src="../Videos/v.MP4" type="video/mp4">
@@ -557,14 +606,221 @@
 
 </div>
 
-<script>
-    function myMap() {
-        var mapProp = {
-            center: new google.maps.LatLng(51.508742, -0.120850),
-            zoom: 14,
-        };
-        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-    }
-</script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZH3d8AiCZ4ImXOCtME7d9_ze3EZnxeR4&callback=myMap"></script>
+
+@section scripts {
+
+    <script>
+        function myMap() {
+            var mapProp = {
+                center: new google.maps.LatLng(51.508742, -0.120850),
+                zoom: 14,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZH3d8AiCZ4ImXOCtME7d9_ze3EZnxeR4&callback=myMap"></script>
+    <script src="~/source/jsCalendar.js"></script>
+
+    <script>
+        function updateClock() {
+            //var t = new Date($.now());
+            var dt = new Date();
+            var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+            //$.now();
+            //new Date().toString();
+            $("#clock").html(time);
+        }
+        setInterval('updateClock()', 1000);
+
+
+        /////////////////////////////////
+        var Cal = function (divId) {
+
+            //Store div id
+
+            this.divId = divId;
+
+            // Days of week, starting on Sunday
+            this.DaysOfWeek = [
+                //'Sunday',
+                //'Monday',
+                //'Tuesday',
+                //'Wednesday',
+                //'Thursday',
+                //'Friday',
+                //'Saturday'
+                'Sun',
+                'Mon',
+                'Tue',
+                'Wed',
+                'Thu',
+                'Fri',
+                'Sat'
+            ];
+
+            // Months, stating on January
+            this.Months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+            // Set the current month, year
+            var d = new Date();
+
+            this.currMonth = d.getMonth();
+            this.currYear = d.getFullYear();
+            this.currDay = d.getDate();
+
+        };
+
+        // Goes to next month
+        Cal.prototype.nextMonth = function () {
+            if (this.currMonth == 11) {
+                this.currMonth = 0;
+                this.currYear = this.currYear + 1;
+            }
+            else {
+                this.currMonth = this.currMonth + 1;
+            }
+            this.showcurr();
+        };
+
+        // Goes to previous month
+        Cal.prototype.previousMonth = function () {
+            if (this.currMonth == 0) {
+                this.currMonth = 11;
+                this.currYear = this.currYear - 1;
+            }
+            else {
+                this.currMonth = this.currMonth - 1;
+            }
+            this.showcurr();
+        };
+
+        // Show current month
+        Cal.prototype.showcurr = function () {
+            this.showMonth(this.currYear, this.currMonth);
+        };
+
+        // Show month (year, month)
+        Cal.prototype.showMonth = function (y, m) {
+
+            var d = new Date()
+                // First day of the week in the selected month
+                , firstDayOfMonth = new Date(y, m, 1).getDay()
+                // Last day of the selected month
+                , lastDateOfMonth = new Date(y, m + 1, 0).getDate()
+                // Last day of the previous month
+                , lastDayOfLastMonth = m == 0 ? new Date(y - 1, 11, 0).getDate() : new Date(y, m, 0).getDate();
+
+
+            var html = '<table>';
+
+            // Write selected month and year
+
+            html += '<thead><tr>';
+            html += '<td colspan="7" class="Day">' + this.DaysOfWeek[m] + '</td>';
+            //html += '<td colspan="7">' + this.Months[m] + ' ' + y + '</td>';
+            html += '</tr></thead>';
+
+
+            html += '<thead><tr>';
+            html += '<td colspan="7">' + this.Months[m] + '</td>';
+            //html += '<td colspan="7">' + this.Months[m] + ' ' + y + '</td>';
+            html += '</tr></thead>';
+
+
+            // Write the header of the days of the week
+            html += '<tr class="days">';
+            for (var i = 0; i < this.DaysOfWeek.length; i++) {
+                html += '<td>' + this.DaysOfWeek[i] + '</td>';
+            }
+            html += '</tr>';
+
+            // Write the days
+            var i = 1;
+            do {
+
+                var dow = new Date(y, m, i).getDay();
+
+                // If Sunday, start new row
+                if (dow == 0) {
+                    html += '<tr>';
+                }
+                // If not Sunday but first day of the month
+                // it will write the last days from the previous month
+                else if (i == 1) {
+                    html += '<tr>';
+                    var k = lastDayOfLastMonth - firstDayOfMonth + 1;
+                    for (var j = 0; j < firstDayOfMonth; j++) {
+                        html += '<td class="not-current">' + k + '</td>';
+                        k++;
+                    }
+                }
+
+                // Write the current day in the loop
+                var chk = new Date();
+                var chkY = chk.getFullYear();
+                var chkM = chk.getMonth();
+                if (chkY == this.currYear && chkM == this.currMonth && i == this.currDay) {
+                    html += '<td class="today">' + i + '</td>';
+                } else {
+                    html += '<td class="normal">' + i + '</td>';
+                }
+                // If Saturday, closes the row
+                if (dow == 6) {
+                    html += '</tr>';
+                }
+                // If not Saturday, but last day of the selected month
+                // it will write the next few days from the next month
+                else if (i == lastDateOfMonth) {
+                    var k = 1;
+                    for (dow; dow < 6; dow++) {
+                        html += '<td class="not-current">' + k + '</td>';
+                        k++;
+                    }
+                }
+
+                i++;
+            } while (i <= lastDateOfMonth);
+
+            // Closes table
+            html += '</table>';
+
+            // Write HTML to the div
+            document.getElementById(this.divId).innerHTML = html;
+        };
+
+        // On Load of the window
+        window.onload = function () {
+
+            // Start calendar
+            var c = new Cal("divCal");
+            c.showcurr();
+
+            // Bind next and previous button clicks
+            getId('btnNext').onclick = function () {
+                c.nextMonth();
+            };
+            getId('btnPrev').onclick = function () {
+                c.previousMonth();
+            };
+        }
+
+        // Get element by id
+        function getId(id) {
+            return document.getElementById(id);
+        }
+            /////////////////////////////////
+        //var element = document.getElementById("my-calendar");
+        //// Create the calendar
+        //jsCalendar.new(element, "16/04/2018", {
+        //    navigator: true,
+        //    navigatorPosition: "left",
+        //    zeroFill: false,
+        //    monthFormat: "month YYYY",
+        //    dayFormat: "DDD",
+        //    language: "en"
+        //});
+    </script>
+
+}
