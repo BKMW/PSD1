@@ -530,12 +530,11 @@ input:checked + .slider:before {
         /*border: 2px solid #4800ff;*/
     }
     #switchs {
-        padding-bottom: 30px;
+        padding-bottom: 50px;
     }
     .row-video {
-        height: 25%;
-        /*padding-bottom: 120px;*/
-        padding-top: 0px;
+       
+        padding-top: 20px;
     }
 }
 @media screen and (max-width: 992px) {
