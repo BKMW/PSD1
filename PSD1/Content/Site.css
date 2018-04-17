@@ -577,12 +577,12 @@ input:checked + .slider:before {
         /*border: 2px solid #4800ff;*/
     }
     .row-phone {
-        height: 550px;
+        height: 580px;
         /*border: 2px solid #4800ff;*/
         padding-top: 50px;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .jsCalendar thead .jsCalendar-week-days th, .jsCalendar tbody td {
         height: 30px;
         width: 25px;
