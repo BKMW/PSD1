@@ -395,6 +395,9 @@ body {
     margin-left:5px;
     float:right;
 }
+#switchs {
+    padding-bottom: 50px;
+}
 
     .switch input {
         display: none;
@@ -479,6 +482,11 @@ input:checked + .slider:before {
         width: 34px;
         margin: 0;
     }
+    .row-phone {
+        /*height: 560px;*/
+        /*border: 2px solid #4800ff;*/
+        /*padding-top: 80px;*/
+    }
 }
 @media screen and (max-width: 1110px) {
     .jsCalendar thead .jsCalendar-week-days th, .jsCalendar tbody td {
@@ -496,18 +504,38 @@ input:checked + .slider:before {
         /*border: 1px solid #c3c3c3;*/
      
     }
+
+        #main1 div {
+            height: 40px;
+            border-bottom: 1px solid #c3c3c3;
+            text-align: center;
+            padding-top: 8px;
+            padding-bottom: 6px;
+            border-radius: 6px;
+            margin-bottom: 11%;
+            background-color: #e5e0ed;
+            color: #6f43bd;
+            border: 1px solid #6f43bd;
+        }
     .style1,.style2,.style3,.style4{
         width:100%;
         margin:2px;
     }
     .row-phone {
         height: 560px;
-        /*border: 2px solid #4800ff;*/
-        padding-top: 20px;
+        
     }
     .row-butons {
         height: 39%;
         /*border: 2px solid #4800ff;*/
+    }
+    #switchs {
+        padding-bottom: 30px;
+    }
+    .row-video {
+        height: 25%;
+        /*padding-bottom: 120px;*/
+        padding-top: 0px;
     }
 }
 @media screen and (max-width: 992px) {
@@ -535,11 +563,12 @@ input:checked + .slider:before {
         font-size: 12px;
     }
     .row-video {
+        height:20%;
         /*padding-bottom: 120px;*/
         padding-top: 0px;
     }
     .jsCalendar thead .jsCalendar-week-days th, .jsCalendar tbody td {
-        height: 27px;
+        height: 25px;
         width: 25px;
         margin: 0;
     }
@@ -549,9 +578,9 @@ input:checked + .slider:before {
         /*border: 2px solid #4800ff;*/
     }
     .row-phone {
-        height: 600px;
+        height: 550px;
         /*border: 2px solid #4800ff;*/
-        padding-top: 20px;
+        padding-top: 50px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -561,7 +590,7 @@ input:checked + .slider:before {
         margin: 0;
     }
     .row-phone {
-        height: 700px;
+        height: 650px;
         /*border: 2px solid #4800ff;*/
         padding-top: 20px;
     }
